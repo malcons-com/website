@@ -1,9 +1,13 @@
 <script>
 	import '../app.css';
 	import Nav from '../components/nav.svelte';
+    import Footer from '../components/footer.svelte';
 </script>
 
-<div class="h-screen p-8 mx-auto bg-navy-blue">
+<div class="flex flex-col h-screen mx-auto">
 	<Nav />
-	<slot />
+	<div class="p-8 flex-grow">
+		<slot />
+	</div>
+    <Footer />
 </div>
