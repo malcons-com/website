@@ -3,7 +3,7 @@
 	import Nav from '../components/nav.svelte';
 </script>
 
-<div class="h-screen p-8 mx-auto bg-malcons-blue">
+<div class="h-screen p-8 mx-auto bg-navy-blue">
 	<Nav />
 	<slot />
 </div>
