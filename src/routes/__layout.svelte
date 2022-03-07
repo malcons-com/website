@@ -1,13 +1,15 @@
 <script>
 	import '../app.css';
 	import Nav from '../components/nav.svelte';
-    import Footer from '../components/footer.svelte';
+	import Footer from '../components/footer.svelte';
 </script>
 
-<div class="flex flex-col h-screen mx-auto">
+<div
+	class="flex flex-col h-screen bg-gradient-to-b from-navy-blue to-azure-blue"
+>
 	<Nav />
-	<div class="p-8 flex-grow">
+	<div class="flex-grow relative">
 		<slot />
 	</div>
-    <Footer />
+	<Footer />
 </div>

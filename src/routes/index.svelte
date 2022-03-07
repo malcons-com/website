@@ -1,5 +1,27 @@
+<script>
+	import Services from '../components/services.svelte';
+	import About from '../components/about.svelte';
+	import Team from '../components/team.svelte';
+	import Contact from '../components/contact.svelte';
+	import Carousel from '../components/carousel.svelte';
+</script>
+
 <svelte:head>
-    <title>Malcons</title>
+	<title>Malcons</title>
 </svelte:head>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<div>
+	<Carousel />
+	<section id="about">
+		<About />
+	</section>
+	<section id="services">
+		<Services />
+	</section>
+	<section id="team">
+		<Team />
+	</section>
+	<section id="contact">
+		<Contact />
+	</section>
+</div>
