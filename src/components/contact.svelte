@@ -9,7 +9,7 @@
 		<div class="w-8">
 			<MdLocationOn />
 		</div>
-		<div class="text-center">Str. Dionisie cel Mic, nr. 26, c.p. 900363, Constanta, Romania</div>
+		<div class="text-center">Str. Dionisie cel Mic, nr. 26 <br> Constanta, Romania, 900363</div>
 	</div>
 	<div class="flex-1 flex flex-col items-center shadow-2xl bg-white p-8 rounded-xl">
 		<div class="w-8">
@@ -17,8 +17,6 @@
 		</div>
 		<div class="text-center">
 			<b>Tel: </b>+40 722 590 420
-            <br />
-			<b>Fax: </b>0341 807 905
 		</div>
 	</div>
 	<div class="flex-1 flex flex-col items-center shadow-2xl bg-white p-8 rounded-xl">
@@ -26,8 +24,8 @@
 			<MdEmail />
 		</div>
 		<div class="text-center">
-			<a class="text-black" href="mailto:malconscom1994@gmail.com">
-				malconscom1994@gmail.com
+			<a class="text-black" href="mailto:malcons_com@yahoo.com">
+				malcons_com@yahoo.com
 			</a>
 		</div>
 	</div>
