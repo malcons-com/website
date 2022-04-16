@@ -15,7 +15,9 @@ const typescriptRules = {
     'no-extra-semi': 'error',
     'no-unused-vars': [
         'error',
-        { args: 'after-used', varsIgnorePattern: '^__unused' }
+        {
+            args: 'after-used', varsIgnorePattern: '^__unused'
+        }
     ],
     'semi': [
         'error',
@@ -26,16 +28,11 @@ const typescriptRules = {
 module.exports = {
     root: true,
     parser: '@typescript-eslint/parser',
-    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
-    plugins: ['svelte3', '@typescript-eslint'],
-    ignorePatterns: ['*.cjs'],
+    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', '@remix-run/eslint-config', '@remix-run/eslint-config/node'],
+    plugins: ['@typescript-eslint'],
     overrides: [
-        { files: ['*.svelte'], processor: 'svelte3/svelte3' },
-        { files: ['*.ts'], rules: typescriptRules }
+        { files: ['*.tsx'], rules: typescriptRules }
     ],
-    settings: {
-        'svelte3/typescript': () => require('typescript')
-    },
     parserOptions: {
         sourceType: 'module',
         ecmaVersion: 2020

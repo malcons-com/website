@@ -1,6 +1,7 @@
 module.exports = {
-    mode: 'jit',
-    content: ['./src/**/*.svelte'],
+    content: [
+        "./app/**/*.{js,ts,jsx,tsx}",
+    ],
     theme: {
         extend: {
             colors: {
@@ -9,5 +10,6 @@ module.exports = {
                 'canary-yellow': '#FEEC02'
             }
         }
-    }
-};
+    },
+    plugins: [],
+}

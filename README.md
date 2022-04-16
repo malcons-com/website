@@ -1,26 +1,53 @@
-# create-svelte
+# Welcome to Remix!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+- [Remix Docs](https://remix.run/docs)
 
-## Developing
+## Development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+From your terminal:
 
-```bash
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev --open
 ```
 
-## Building
+This starts your app in development mode, rebuilding assets on file changes.
 
-To create a production version of your app:
+## Deployment
 
-```bash
+First, build your app for production:
+
+```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Then run the app in production mode:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `remix build`
+
+- `build/`
+- `public/build/`
+
+### Using a Template
+
+When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
+
+```sh
+cd ..
+# create a new project, and pick a pre-configured host
+npx create-remix@latest
+cd my-new-remix-app
+# remove the new project's app (not the old one!)
+rm -rf app
+# copy your app over
+cp -R ../my-old-remix-app/app app
+```

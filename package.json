@@ -1,39 +1,36 @@
 {
-  "name": "website",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^5.10.1",
-    "@typescript-eslint/parser": "^5.10.1",
-    "autoprefixer": "^10.4.2",
-    "concurrently": "^7.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.2.1",
-    "postcss": "^8.4.7",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.5.0",
-    "svelte": "^3.44.0",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.10.1",
-    "tailwindcss": "^3.0.23",
-    "tslib": "^2.3.1",
-    "typescript": "~4.6.2"
-  },
-  "type": "module",
-  "dependencies": {
-    "svelte-icons": "2.1.0"
-  }
+    "name": "malcons-website",
+    "private": true,
+    "description": "",
+    "license": "",
+    "sideEffects": false,
+    "scripts": {
+        "build": "npm run build:css && remix build",
+        "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+        "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+        "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
+        "start": "remix-serve build"
+    },
+    "dependencies": {
+        "@remix-run/node": "1.4.0",
+        "@remix-run/react": "1.4.0",
+        "@remix-run/serve": "1.4.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
+    },
+    "devDependencies": {
+        "@remix-run/dev": "1.4.0",
+        "@remix-run/eslint-config": "1.4.0",
+        "@types/react": "17.0.24",
+        "@types/react-dom": "17.0.9",
+        "autoprefixer": "10.4.4",
+        "concurrently": "7.1.0",
+        "eslint": "8.11.0",
+        "postcss": "8.4.12",
+        "tailwindcss": "3.0.24",
+        "typescript": "4.5.5"
+    },
+    "engines": {
+        "node": ">=14"
+    }
 }
