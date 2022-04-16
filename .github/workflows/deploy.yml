@@ -48,4 +48,3 @@ jobs:
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./out
-        external_repository: malcons-com/malcons-com.github.io
