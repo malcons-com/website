@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="flex flex-col h-screen bg-gradient-to-b from-navy-blue to-azure-blue"
+	class="flex flex-col h-[220vh] bg-gradient-to-bl from-navy-blue to-white"
 >
 	<Nav />
 	<div class="flex-grow relative">
