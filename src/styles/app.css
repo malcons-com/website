@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mukta'), url('/fonts/Mukta_mahee.woff') format('woff');
+}
+
+body,
+html {
+    font-family: 'Mukta', sans-serif;
+    width: 100%;
+}
