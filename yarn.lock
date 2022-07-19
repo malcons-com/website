@@ -3472,6 +3472,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+svelte-hamburgers@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/svelte-hamburgers/-/svelte-hamburgers-4.0.1.tgz#4858343c652810d1c1db7dc7f1ac324960886959"
+  integrity sha512-5xm430w5XNukmxyJ4tW2ln7oSA9qQ4TiKiIfbaDmwmUuCpnW6GD4cDSTG5U/2PwerI7AFNhIhB5iNwnzE2RQXA==
+
 svelte-hmr@^0.14.12:
   version "0.14.12"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.12.tgz#a127aec02f1896500b10148b2d4d21ddde39973f"

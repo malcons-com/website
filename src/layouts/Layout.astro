@@ -1,6 +1,6 @@
 ---
 import '../styles/app.css';
-import Nav from '@components/Nav.astro';
+import Nav from '@components/Nav.svelte';
 import Footer from '@components/Footer.astro';
 ---
 
@@ -14,7 +14,7 @@ import Footer from '@components/Footer.astro';
 </head>
 
 <body class="flex flex-col bg-white">
-    <Nav />
+    <Nav client:load/>
     <div class="flex-grow relative">
         <slot />
     </div>

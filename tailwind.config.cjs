@@ -11,7 +11,7 @@ module.exports = {
             backgroundImage: {
                 'construction-1-img': 'url(\'/images/construction-1.jpg\')',
                 'construction-2-img': 'url(\'/images/construction-2.jpg\')',
-                'construction-3-img': 'url(\'/images/construction-3.jpg\')',
+                'construction-3-img': 'url(\'/images/construction-3-50.png\')',
                 'construction-4-img': 'url(\'/images/construction-4.jpg\')',
                 'construction-5-img': 'url(\'/images/construction-5.jpg\')',
                 'construction-6-img': 'url(\'/images/construction-6.jpg\')',

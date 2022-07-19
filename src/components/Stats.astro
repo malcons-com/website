@@ -1,0 +1,19 @@
+---
+import Stat from './Stat.astro';
+
+const stats = [
+    { stat: 15, title: 'Izolații' },
+    { stat: 20, title: 'Instalații' },
+    { stat: 55, title: 'Construcții civile si industriale' },
+    { stat: 10, title: 'Tâmplării' }
+];
+---
+
+<div class="bg-construction-3-img bg-no-repeat bg-cover">
+    <div class="w-full py-48 px-8 text-slate-900">
+        <div class="grid gap-8 grid-cols-2 justify-items-center lg:grid-cols-4 lg:gap-0">
+            {stats.map(stat =>
+            <Stat stat={stat.stat} title={stat.title} />)}
+        </div>
+    </div>
+</div>
