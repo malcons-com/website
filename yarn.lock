@@ -91,7 +91,7 @@
     svelte "^3.24.0"
     svelte2tsx "^0.5.5"
 
-"@astrojs/svelte@^0.4.0":
+"@astrojs/svelte@0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@astrojs/svelte/-/svelte-0.4.0.tgz#9f26f3d2186b7412c32fd002c503bb33d1a13cef"
   integrity sha512-R/ARqtUpz3nT1qHO7652Sjmn4jAAEVwZzjz0/ZsOO8Fwcrd1TmP59TloHqT3N31HF4aoBI9Zi81WPAkZeze/zg==
@@ -102,7 +102,7 @@
     svelte2tsx "^0.5.11"
     vite "^2.9.10"
 
-"@astrojs/tailwind@^0.2.4":
+"@astrojs/tailwind@0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-0.2.4.tgz#6d772acc90003fb5567408c29fe22c5894b4217f"
   integrity sha512-rDpUHXOUmQkReIvaTBgxYsrsz8Hgt93Tbw9gu7Bkf7Uys6cBCnnQgFpPtdgrqyLNZ0qo9vAxWHSyBSi6jAs1yA==
@@ -679,7 +679,7 @@ ast-types@0.14.2, ast-types@^0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro@^1.0.0-beta.72:
+astro@1.0.0-beta.72:
   version "1.0.0-beta.72"
   resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.0-beta.72.tgz#e1ac870fc4fb91032b611ad574629b23a7257fba"
   integrity sha512-OUuASTz+3OifE7tIESdJ4RO6yDZoZ7pDiQ9lsEIwhciBKXB9ezEvpbrYmHQr1dxBdwFUwvMFcOqR/H9b2KykQQ==
@@ -3477,6 +3477,11 @@ svelte-hmr@^0.14.12:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.12.tgz#a127aec02f1896500b10148b2d4d21ddde39973f"
   integrity sha512-4QSW/VvXuqVcFZ+RhxiR8/newmwOCTlbYIezvkeN6302YFRE8cXy0naamHcjz8Y9Ce3ITTZtrHrIL0AGfyo61w==
 
+svelte-icons@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/svelte-icons/-/svelte-icons-2.1.0.tgz#6f2ec72f1d5c8b2de1a4b8a822c95bcb2f701aca"
+  integrity sha512-rHPQjweEc9fGSnvM0/4gA3pDHwyZyYsC5KhttCZRhSMJfLttJST5Uq0B16Czhw+HQ+HbSOk8kLigMlPs7gZtfg==
+
 svelte-preprocess@^4.10.7:
   version "4.10.7"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.10.7.tgz#3626de472f51ffe20c9bc71eff5a3da66797c362"
@@ -3497,7 +3502,12 @@ svelte2tsx@^0.5.11, svelte2tsx@^0.5.5:
     dedent-js "^1.0.1"
     pascal-case "^3.1.1"
 
-svelte@^3.24.0, svelte@^3.46.4:
+svelte@3.46.4:
+  version "3.46.4"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.46.4.tgz#0c46bc4a3e20a2617a1b7dc43a722f9d6c084a38"
+  integrity sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg==
+
+svelte@^3.24.0:
   version "3.49.0"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.49.0.tgz#5baee3c672306de1070c3b7888fc2204e36a4029"
   integrity sha512-+lmjic1pApJWDfPCpUUTc1m8azDqYCG1JN9YEngrx/hUyIcFJo6VZhj0A1Ai0wqoHcEIuQy+e9tk+4uDgdtsFA==
