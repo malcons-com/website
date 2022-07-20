@@ -1,27 +1,30 @@
-<div class="w-full flex flex-col sm:flex-row justify-between gap-4 py-14 px-8 lg:px-24 xl:px-48">
-    <div class="flex-1 flex flex-col items-center shadow-2xl bg-white p-8 rounded-xl">
-        <div class="w-8">
-            {/*
-            <MdLocationOn /> */}
+---
+import MdLocationOn from 'svelte-icons/md/MdLocationOn.svelte';
+import MdPhone from 'svelte-icons/md/MdPhone.svelte';
+import MdEmail from 'svelte-icons/md/MdEmail.svelte';
+---
+
+<div class="text-slate-900 w-full flex flex-col sm:flex-row justify-between gap-4 py-24 px-8 lg:px-24 xl:px-48 bg-blueprint-3-img bg-top">
+    <div class="flex-1 flex flex-col items-center shadow-2xl backdrop-filter backdrop-blur-md p-8 rounded-xl">
+        <div class="w-12">
+            <MdLocationOn />
         </div>
         <div class="text-center">Str. Dionisie cel Mic, nr. 26 <br /> Constanta, Romania, 900363</div>
     </div>
-    <div class="flex-1 flex flex-col items-center shadow-2xl bg-white p-8 rounded-xl">
-        <div class="w-8">
-            {/*
-            <MdPhone /> */}
+    <div class="flex-1 flex flex-col items-center shadow-2xl backdrop-filter backdrop-blur-md p-8 rounded-xl">
+        <div class="w-12">
+            <MdPhone />
         </div>
         <div class="text-center">
             <b>Tel: </b>+40 722 590 420
         </div>
     </div>
-    <div class="flex-1 flex flex-col items-center shadow-2xl bg-white p-8 rounded-xl">
-        <div class="w-8">
-            {/*
-            <MdEmail /> */}
+    <div class="flex-1 flex flex-col items-center shadow-2xl backdrop-filter backdrop-blur-md p-8 rounded-xl">
+        <div class="w-12">
+            <MdEmail />
         </div>
         <div class="text-center">
-            <a class="text-black" href="mailto:malcons_com@yahoo.com">
+            <a href="mailto:malcons_com@yahoo.com">
                 malcons_com@yahoo.com
             </a>
         </div>

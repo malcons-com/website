@@ -1,0 +1,13 @@
+---
+const { stat } = Astro.props;
+const { title } = Astro.props;
+---
+
+<div class="flex flex-col justify-center content-start text-center shadow-2xl backdrop-filter backdrop-blur-md p-8 rounded-xl w-48">
+    <h2 class="text-5xl">
+        {stat}%
+    </h2>
+    <h2 class="text-2xl">
+        {title}
+    </h2>
+</div>
